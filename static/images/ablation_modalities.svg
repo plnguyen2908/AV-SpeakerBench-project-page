@@ -1,0 +1,11 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='900' height='500' viewBox='0 0 900 500'>
+  <defs>
+    <linearGradient id='g' x1='0' x2='1' y1='0' y2='1'>
+      <stop offset='0%' stop-color='#c7d9ff'/>
+      <stop offset='100%' stop-color='#e5f7ff'/>
+    </linearGradient>
+  </defs>
+  <rect width='900' height='500' fill='url(#g)' rx='24'/>
+  <text x='50%' y='45%' text-anchor='middle' fill='#1d2433' font-size='28' font-family='Manrope, sans-serif' font-weight='700'>Modality Ablation Across Tasks</text>
+  <text x='50%' y='54%' text-anchor='middle' fill='#3b4253' font-size='16' font-family='Manrope, sans-serif'>Placeholder — replace with the ablation figure</text>
+</svg>

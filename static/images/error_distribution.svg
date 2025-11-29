@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   version="1.1"
+   id="svg1"
+   width="758.40002"
+   height="758.40002"
+   viewBox="0 0 758.40002 758.40002"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <g
+     id="g1">
+    <path
+       id="path1"
+       d="M 0,0 H 568.8 V 568.8 H 0 Z"
+       style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       transform="matrix(1.3333333,0,0,-1.3333333,0,758.4)" />
+    <path
+       id="path2"
+       d="m 486.98784,194.20209 c 15.03204,33.76251 21.38821,70.75326 18.48855,107.597 -2.89967,36.84375 -14.96421,72.38475 -35.09281,103.38006 -20.12859,30.99532 -47.68982,56.47266 -80.16886,74.10733 C 357.73569,496.92116 321.35768,506.16 284.4,506.16 V 284.4 Z"
+       style="fill:#f8d9d7;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1.4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+       transform="matrix(1.3333333,0,0,-1.3333333,0,758.4)" />
+    <path
+       id="path3"
+       d="m 352.9276,73.493706 c 29.5553,9.603097 56.76463,25.312408 79.8588,46.106494 23.09418,20.79409 41.56158,46.21229 54.20144,74.60189 L 284.4,284.4 Z"
+       style="fill:#d7e6ff;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1.4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+       transform="matrix(1.3333333,0,0,-1.3333333,0,758.4)" />
+    <path
+       id="path4"
+       d="m 173.51999,92.350213 c 26.91284,-15.538141 56.79373,-25.247031 87.69977,-28.495388 30.90604,-3.248357 62.15255,0.03578 91.70784,9.638881 L 284.4,284.4 Z"
+       style="fill:#cff5d9;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1.4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+       transform="matrix(1.3333333,0,0,-1.3333333,0,758.4)" />
+    <path
+       id="path5"
+       d="M 92.350213,395.28001 C 62.954284,344.36478 54.979838,283.79287 70.196285,227.0043 85.412733,170.21573 122.60475,121.74614 173.51999,92.350213 L 284.4,284.4 Z"
+       style="fill:#ffd9df;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1.4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+       transform="matrix(1.3333333,0,0,-1.3333333,0,758.4)" />
+    <path
+       id="path6"
+       d="m 284.40002,506.16 c -38.92411,0 -77.17073,-10.24814 -110.88001,-29.7102 -33.70927,-19.46205 -61.70774,-47.46052 -81.169797,-81.16979 L 284.4,284.4 Z"
+       style="fill:#e6deff;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1.4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+       transform="matrix(1.3333333,0,0,-1.3333333,0,758.4)" />
+    <text
+       id="text6"
+       xml:space="preserve"
+       transform="matrix(1.3333333,0,0,1.3333333,502.26077,254.26432)"><tspan
+         id="tspan6"
+         style="font-variant:normal;font-weight:normal;font-size:18px;font-family:'DejaVu Sans';writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         x="0"
+         y="0">31.7%</tspan></text>
+    <text
+       id="text7"
+       xml:space="preserve"
+       transform="matrix(1.3333333,0,0,1.3333333,506.28161,281.13932)"><tspan
+         id="tspan7"
+         style="font-variant:normal;font-weight:normal;font-size:18px;font-family:'DejaVu Sans';writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         x="0"
+         y="0">Audio</tspan></text>
+    <text
+       id="text8"
+       xml:space="preserve"
+       transform="matrix(1.3333333,0,0,1.3333333,476.90661,308.01432)"><tspan
+         id="tspan8"
+         style="font-variant:normal;font-weight:normal;font-size:18px;font-family:'DejaVu Sans';writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         x="0"
+         dx="0 -0.640625 0 -0.390625"
+         y="0">Perception</tspan></text>
+    <text
+       id="text9"
+       xml:space="preserve"
+       transform="matrix(1.3333333,0,0,1.3333333,469.67655,501.76607)"><tspan
+         id="tspan9"
+         style="font-variant:normal;font-weight:normal;font-size:18px;font-family:'DejaVu Sans';writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         x="0"
+         y="0">13.3%</tspan></text>
+    <text
+       id="text10"
+       xml:space="preserve"
+       transform="matrix(1.3333333,0,0,1.3333333,471.96822,528.64107)"><tspan
+         id="tspan10"
+         style="font-variant:normal;font-weight:normal;font-size:18px;font-family:'DejaVu Sans';writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         x="0"
+         dx="0 -0.390625"
+         y="0">Visual</tspan></text>
+    <text
+       id="text11"
+       xml:space="preserve"
+       transform="matrix(1.3333333,0,0,1.3333333,444.32238,555.51607)"><tspan
+         id="tspan11"
+         style="font-variant:normal;font-weight:normal;font-size:18px;font-family:'DejaVu Sans';writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         x="0"
+         dx="0 -0.640625 0 -0.390625"
+         y="0">Perception</tspan></text>
+    <text
+       id="text12"
+       xml:space="preserve"
+       transform="matrix(1.3333333,0,0,1.3333333,320.98546,550.07873)"><tspan
+         id="tspan12"
+         style="font-variant:normal;font-weight:normal;font-size:18px;font-family:'DejaVu Sans';writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         x="0"
+         y="0">13.3%</tspan></text>
+    <text
+       id="text13"
+       xml:space="preserve"
+       transform="matrix(1.3333333,0,0,1.3333333,284.53754,576.95373)"><tspan
+         id="tspan13"
+         style="font-variant:normal;font-weight:normal;font-size:18px;font-family:'DejaVu Sans';writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         x="0"
+         dx="0 0 -0.390625"
+         y="0">Cross-modal</tspan></text>
+    <text
+       id="text14"
+       xml:space="preserve"
+       transform="matrix(1.3333333,0,0,1.3333333,295.25629,603.82873)"><tspan
+         id="tspan14"
+         style="font-variant:normal;font-weight:normal;font-size:18px;font-family:'DejaVu Sans';writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         x="0"
+         dx="0 -0.3125"
+         y="0">Attribution</tspan></text>
+    <text
+       id="text15"
+       xml:space="preserve"
+       transform="matrix(1.3333333,0,0,1.3333333,155.43178,408.68252)"><tspan
+         id="tspan15"
+         style="font-variant:normal;font-weight:normal;font-size:18px;font-family:'DejaVu Sans';writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         x="0"
+         y="0">25.0%</tspan></text>
+    <text
+       id="text16"
+       xml:space="preserve"
+       transform="matrix(1.3333333,0,0,1.3333333,138.5672,435.55752)"><tspan
+         id="tspan16"
+         style="font-variant:normal;font-weight:normal;font-size:18px;font-family:'DejaVu Sans';writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         x="0"
+         dx="0 -3.046875"
+         y="0">Temporal</tspan></text>
+    <text
+       id="text17"
+       xml:space="preserve"
+       transform="matrix(1.3333333,0,0,1.3333333,130.84845,462.43252)"><tspan
+         id="tspan17"
+         style="font-variant:normal;font-weight:normal;font-size:18px;font-family:'DejaVu Sans';writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         x="0"
+         dx="0 0 -0.390625"
+         y="0">Grounding</tspan></text>
+    <text
+       id="text18"
+       xml:space="preserve"
+       transform="matrix(1.3333333,0,0,1.3333333,244.97901,192.49642)"><tspan
+         id="tspan18"
+         style="font-variant:normal;font-weight:normal;font-size:18px;font-family:'DejaVu Sans';writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         x="0"
+         y="0">16.7%</tspan></text>
+    <text
+       id="text19"
+       xml:space="preserve"
+       transform="matrix(1.3333333,0,0,1.3333333,228.11443,219.37142)"><tspan
+         id="tspan19"
+         style="font-variant:normal;font-weight:normal;font-size:18px;font-family:'DejaVu Sans';writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         x="0"
+         dx="0 -3.046875"
+         y="0">Temporal</tspan></text>
+    <text
+       id="text20"
+       xml:space="preserve"
+       transform="matrix(1.3333333,0,0,1.3333333,212.06235,246.24642)"><tspan
+         id="tspan20"
+         style="font-variant:normal;font-weight:normal;font-size:18px;font-family:'DejaVu Sans';writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         x="0"
+         dx="0 -0.3125"
+         y="0">Localization</tspan></text>
+  </g>
+</svg>

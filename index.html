@@ -1,0 +1,314 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AV-SpeakerBench</title>
+  <link rel="icon" href="static/images/icon.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header></header>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="hero-figure">
+        <img src="static/images/icon.png" alt="AV-SpeakerBench icon">
+      </div>
+      <h1><center> See, Hear, and Understand: Benchmarking Audiovisual Human Speech Understanding in Multimodal Large Language Models</center></h1>
+      
+      <div class="authors">
+        <a href="https://plnguyen2908.github.io/">Le Thien Phuc Nguyen*</a>,
+        <a href="https://www.zhuoranyu.com/">Zhuoran Yu*</a>,
+        Samuel Low Yu Hang, Subin An, Jeongkik Lee, Yohan Ban, SeungEun Chung,
+        <a href="https://www.linkedin.com/in/antares0811/">Thanh-Huy Nguyen</a>,
+        Juwan Maeng,
+        <a href="https://sites.google.com/view/soochahnlee/">Soochahn Lee</a>,
+        <a href="https://pages.cs.wisc.edu/~yongjaelee/">Yong Jae Lee</a>
+        <br>( * equal contribution )
+      </div>
+      <div class="cta-row">
+        <a class="btn primary" href="https://github.com/plnguyen2908/AV-SpeakerBench" target="_blank" rel="noreferrer">GitHub</a>
+        <a class="btn" href="paper_text.txt" target="_blank" rel="noreferrer">Paper</a>
+        <a class="btn" href="#leaderboard">Leaderboard</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="container">
+    <section class="section">
+      <h2>What makes it different</h2>
+      <p class="sub">Fusion-grounded design with explicit anchors to prevent unimodal shortcuts.</p>
+      <div class="row">
+        <div class="card">
+          <h3>Benchmark focus</h3>
+          <ul class="list">
+            <li><strong>Clip length:</strong> short, real clips (&lt;25s) to match typical frame budgets.</li>
+            <li><strong>Coverage:</strong> 11 audio-visual skills including speaker detection/recognition/counting, speech duration/rate/intensity/pitch, activity, attributes, visual counting, and speech recognition.</li>
+            <li><strong>Diversity:</strong> 25.8% ≤2 speakers, 24.6% have 3, 18.1% have 4, 31.5% have ≥5.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Anchored questions</h3>
+          <p class="muted">Audio tasks use visual anchors; visual tasks use audio anchors; speaker reasoning mixes both to force cross-modal grounding.</p>
+          <ul class="list">
+            <li>Find the visual cue, then listen in-window to count mentions.</li>
+            <li>Locate the utterance, then inspect the video for the answer.</li>
+            <li>Track who/when/where with mixed anchors and answer cues.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Dataset at a glance</h3>
+          <ul class="list">
+            <li><strong>Scale:</strong> 3,212 fusion-grounded MCQs from real-world clips.</li>
+            <li><strong>Modality:</strong> aligned audio + video; questions require cross-modal reasoning.</li>
+            <li><strong>Source:</strong> curated clips with expert annotations for temporal accuracy.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Peek at the data</h2>
+      <div class="row">
+        <div class="media tall">
+          <img src="static/images/question_design.png" alt="AV-SpeakerBench question design">
+        </div>
+      </div>
+      <div class="row">
+        <div class="media tall">
+          <img src="static/images/dataset_stat.png" alt="AV-SpeakerBench dataset statistics">
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="leaderboard">
+      <h2>Leaderboard (per sub-category, MCQ accuracy)</h2>
+      <div class="table-wrap">
+        <table id="leaderboard-table">
+          <thead>
+            <tr>
+              <th>Model</th>
+              <th>Type</th>
+              <th>Overall</th>
+              <th>Speaker Det.</th>
+              <th>Speaker Rec.</th>
+              <th>Speaker Cnt.</th>
+              <th>Attr. Rec.</th>
+              <th>Activity Rec.</th>
+              <th>Visual Cnt.</th>
+              <th>Speech Rec.</th>
+              <th>Speech Dur.</th>
+              <th>Speech Pitch</th>
+              <th>Speech Rate</th>
+              <th>Speech Intensity</th>
+              <th>Audio Cnt.</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Human performance</td>
+              <td><span class="tag tag-upper">Upper bound</span></td>
+              <td>93.74</td><td>96.02</td><td>93.13</td><td>94.28</td><td>93.14</td><td>93.20</td><td>94.15</td><td>96.52</td><td>90.68</td><td>93.20</td><td>91.39</td><td>94.17</td><td>93.40</td>
+            </tr>
+            <tr>
+              <td>Gemini 2.5 Pro (Thinking)</td>
+              <td><span class="tag tag-prop">Proprietary</span></td>
+              <td>73.04</td><td>81.73</td><td>74.15</td><td>74.13</td><td>72.55</td><td>73.30</td><td>62.93</td><td>77.11</td><td>78.81</td><td>67.48</td><td>69.86</td><td>71.84</td><td>63.89</td>
+            </tr>
+            <tr>
+              <td>Gemini 2.5 Flash (Thinking)</td>
+              <td><span class="tag tag-prop">Proprietary</span></td>
+              <td>67.84</td><td>74.71</td><td>70.62</td><td>60.95</td><td>65.59</td><td>70.39</td><td>65.85</td><td>78.61</td><td>69.92</td><td>66.50</td><td>67.46</td><td>65.05</td><td>58.33</td>
+            </tr>
+            <tr>
+              <td>Gemini 2.5 Flash</td>
+              <td><span class="tag tag-prop">Proprietary</span></td>
+              <td>60.27</td><td>69.79</td><td>68.24</td><td>50.75</td><td>61.76</td><td>68.45</td><td>51.22</td><td>71.64</td><td>58.47</td><td>60.68</td><td>60.29</td><td>59.71</td><td>40.97</td>
+            </tr>
+            <tr>
+              <td>Qwen3-Omni 30B</td>
+              <td><span class="tag tag-open-omni">Open omni</span></td>
+              <td>54.14</td><td>61.83</td><td>54.74</td><td>46.77</td><td>56.86</td><td>58.74</td><td>40.49</td><td>68.16</td><td>59.32</td><td>58.74</td><td>55.98</td><td>66.02</td><td>34.72</td>
+            </tr>
+            <tr>
+              <td>Gemini 2.0 Flash</td>
+              <td><span class="tag tag-prop">Proprietary</span></td>
+              <td>53.21</td><td>60.19</td><td>63.51</td><td>47.51</td><td>54.90</td><td>63.59</td><td>45.85</td><td>71.14</td><td>56.78</td><td>62.62</td><td>55.98</td><td>55.83</td><td>41.67</td>
+            </tr>
+            <tr>
+              <td>Gemini 2.0 Flash-Lite</td>
+              <td><span class="tag tag-prop">Proprietary</span></td>
+              <td>51.43</td><td>56.91</td><td>57.35</td><td>38.81</td><td>49.02</td><td>55.83</td><td>45.85</td><td>67.66</td><td>52.12</td><td>52.43</td><td>51.12</td><td>56.31</td><td>33.33</td>
+            </tr>
+            <tr>
+              <td>Gemini 2.5 Flash-Lite</td>
+              <td><span class="tag tag-prop">Proprietary</span></td>
+              <td>47.23</td><td>45.90</td><td>52.44</td><td>39.10</td><td>48.53</td><td>51.94</td><td>43.41</td><td>55.72</td><td>51.69</td><td>51.46</td><td>46.89</td><td>54.37</td><td>36.11</td>
+            </tr>
+            <tr>
+              <td>Qwen2.5-Omni 7B</td>
+              <td><span class="tag tag-open-omni">Open omni</span></td>
+              <td>42.31</td><td>47.54</td><td>41.23</td><td>34.83</td><td>42.65</td><td>38.83</td><td>43.41</td><td>53.23</td><td>47.03</td><td>51.94</td><td>42.11</td><td>43.20</td><td>29.17</td>
+            </tr>
+            <tr>
+              <td>Phi-4 Multimodal 5.6B</td>
+              <td><span class="tag tag-open-omni">Open omni</span></td>
+              <td>38.45</td><td>37.70</td><td>41.71</td><td>28.02</td><td>46.95</td><td>33.50</td><td>38.05</td><td>45.77</td><td>38.56</td><td>49.03</td><td>42.58</td><td>37.38</td><td>26.04</td>
+            </tr>
+            <tr>
+              <td>Qwen2.5-Omni 3B</td>
+              <td><span class="tag tag-open-omni">Open omni</span></td>
+              <td>38.23</td><td>44.91</td><td>41.23</td><td>33.83</td><td>44.61</td><td>45.63</td><td>44.88</td><td>45.77</td><td>50.00</td><td>42.23</td><td>32.54</td><td>39.32</td><td>26.39</td>
+            </tr>
+            <tr>
+              <td>Video-LLaMA2 7B</td>
+              <td><span class="tag tag-open-av">Open AV</span></td>
+              <td>37.67</td><td>34.19</td><td>36.02</td><td>31.25</td><td>35.29</td><td>37.38</td><td>41.46</td><td>29.85</td><td>40.25</td><td>49.03</td><td>44.02</td><td>45.15</td><td>31.25</td>
+            </tr>
+            <tr>
+              <td>VITA-1.5 7B</td>
+              <td><span class="tag tag-open-av">Open AV</span></td>
+              <td>36.27</td><td>32.08</td><td>36.73</td><td>32.59</td><td>38.24</td><td>35.44</td><td>35.12</td><td>32.34</td><td>45.34</td><td>43.20</td><td>44.98</td><td>36.89</td><td>29.51</td>
+            </tr>
+            <tr>
+              <td>VITA 7B</td>
+              <td><span class="tag tag-open-av">Open AV</span></td>
+              <td>33.66</td><td>32.08</td><td>34.60</td><td>29.85</td><td>37.25</td><td>36.41</td><td>28.78</td><td>32.84</td><td>37.29</td><td>38.83</td><td>35.89</td><td>37.86</td><td>28.13</td>
+            </tr>
+            <tr>
+              <td>Video-LLaMA 13B</td>
+              <td><span class="tag tag-open-av">Open AV</span></td>
+              <td>29.11</td><td>30.91</td><td>29.86</td><td>25.37</td><td>27.23</td><td>37.38</td><td>29.76</td><td>27.86</td><td>23.31</td><td>27.67</td><td>33.49</td><td>30.58</td><td>27.08</td>
+            </tr>
+            <tr>
+              <td>Video-LLaMA 7B</td>
+              <td><span class="tag tag-open-av">Open AV</span></td>
+              <td>28.21</td><td>29.51</td><td>26.07</td><td>29.35</td><td>27.23</td><td>32.52</td><td>25.37</td><td>31.84</td><td>28.81</td><td>31.55</td><td>28.23</td><td>27.67</td><td>21.53</td>
+            </tr>
+            <tr>
+              <td>Unified-IO 2 xl 3B</td>
+              <td><span class="tag tag-open-omni">Open omni</span></td>
+              <td>27.52</td><td>28.81</td><td>28.44</td><td>31.25</td><td>30.39</td><td>26.21</td><td>23.41</td><td>24.88</td><td>30.93</td><td>22.82</td><td>26.32</td><td>30.58</td><td>31.25</td>
+            </tr>
+            <tr>
+              <td>Unified-IO 2 large 1B</td>
+              <td><span class="tag tag-open-omni">Open omni</span></td>
+              <td>26.15</td><td>24.36</td><td>27.49</td><td>23.88</td><td>24.51</td><td>23.79</td><td>22.93</td><td>21.89</td><td>22.03</td><td>25.24</td><td>31.58</td><td>31.55</td><td>34.38</td>
+            </tr>
+            <tr>
+              <td>Unified-IO 2 xxl 7B</td>
+              <td><span class="tag tag-open-omni">Open omni</span></td>
+              <td>24.97</td><td>26.70</td><td>27.25</td><td>24.63</td><td>30.39</td><td>22.82</td><td>29.76</td><td>23.28</td><td>35.59</td><td>25.24</td><td>33.49</td><td>37.38</td><td>28.80</td>
+            </tr>
+            <tr>
+              <td>OneLLM 7B</td>
+              <td><span class="tag tag-open-omni">Open omni</span></td>
+              <td>24.97</td><td>30.44</td><td>23.70</td><td>20.65</td><td>30.88</td><td>25.24</td><td>27.80</td><td>25.37</td><td>1.69</td><td>24.27</td><td>28.23</td><td>25.73</td><td>34.72</td>
+            </tr>
+            <tr>
+              <td>PandaGPT 7B</td>
+              <td><span class="tag tag-open-av">Open AV</span></td>
+              <td>22.88</td><td>28.34</td><td>20.61</td><td>27.36</td><td>16.18</td><td>20.87</td><td>32.20</td><td>33.83</td><td>19.07</td><td>24.27</td><td>17.70</td><td>14.56</td><td>15.63</td>
+            </tr>
+            <tr>
+              <td>PandaGPT 13B</td>
+              <td><span class="tag tag-open-av">Open AV</span></td>
+              <td>18.37</td><td>20.61</td><td>16.82</td><td>28.36</td><td>0.98</td><td>1.94</td><td>25.37</td><td>5.97</td><td>22.46</td><td>22.82</td><td>25.84</td><td>23.30</td><td>15.63</td>
+            </tr>
+            <tr>
+              <td>AnyGPT 7B</td>
+              <td><span class="tag tag-open-omni">Open omni</span></td>
+              <td>12.67</td><td>24.12</td><td>4.27</td><td>24.88</td><td>0.98</td><td>19.90</td><td>19.51</td><td>15.42</td><td>0.00</td><td>0.00</td><td>0.48</td><td>2.43</td><td>22.92</td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="muted" style="margin-top: 8px;">Numbers reflect the latest snapshot; ordered by Overall.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Ablations &amp; Error Analysis</h2>
+      <div class="row" style="grid-template-columns: 3fr 2fr;">
+        <div class="media tall">
+          <img src="static/images/modality_ablation.svg" alt="Modality ablation across task types">
+        </div>
+        <div class="media">
+          <img src="static/images/error_distribution.png" alt="Error type distribution across benchmark categories">
+        </div>
+      </div>
+      <p class="muted" style="margin-top: 8px;">(Left) Visual-only vs. audio gains per task. (Right) Error breakdown by category.</p>
+    </section>
+
+    <section class="section">
+      <h2>Performance vs. # of Visible People</h2>
+      <div class="table-wrap">
+        <table class="table-narrow">
+          <thead>
+            <tr>
+              <th>Model</th>
+              <th>Type</th>
+              <th>&le;2</th>
+              <th>3</th>
+              <th>4</th>
+              <th>&ge;5</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Gemini 2.5 Pro (Thinking)</td>
+              <td><span class="tag tag-prop">Proprietary</span></td>
+              <td>74.8</td><td>74.1</td><td>74.1</td><td>70.9</td>
+            </tr>
+            <tr>
+              <td>Gemini 2.5 Flash (Thinking)</td>
+              <td><span class="tag tag-prop">Proprietary</span></td>
+              <td>71.8</td><td>68.4</td><td>66.8</td><td>65.1</td>
+            </tr>
+            <tr>
+              <td>Qwen3-Omni 30B</td>
+              <td><span class="tag tag-open-omni">Open omni</span></td>
+              <td>58.3</td><td>52.9</td><td>52.0</td><td>54.4</td>
+            </tr>
+            <tr>
+              <td>Qwen2.5-Omni 7B</td>
+              <td><span class="tag tag-open-omni">Open omni</span></td>
+              <td>46.7</td><td>40.7</td><td>42.4</td><td>40.2</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Citation</h2>
+      <div class="card">
+        <pre></pre>
+      </div>
+    </section>
+  </div>
+
+  <footer class="footer">
+    <p>Inspired by Video-MME.</p>
+  </footer>
+
+  <script>
+    (function() {
+      const table = document.getElementById('leaderboard-table');
+      if (!table) return;
+      const tbody = table.querySelector('tbody');
+      const sortByOverall = () => {
+        const rows = Array.from(tbody.querySelectorAll('tr'));
+        rows.sort((a, b) => {
+          const vb = parseFloat(b.children[2].innerText.trim()) || -Infinity;
+          const va = parseFloat(a.children[2].innerText.trim()) || -Infinity;
+          return vb - va;
+        });
+        rows.forEach(r => tbody.appendChild(r));
+      };
+      sortByOverall();
+      new MutationObserver(sortByOverall).observe(tbody, { childList: true });
+    })();
+  </script>
+</body>
+</html>
