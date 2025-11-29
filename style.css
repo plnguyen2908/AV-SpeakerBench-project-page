@@ -10,7 +10,7 @@
   --accent-soft: rgba(31, 111, 235, 0.08);
   --shadow: 0 14px 40px rgba(18, 41, 69, 0.08);
   --radius: 16px;
-  --max-width: 1080px;
+  --max-width: 80vw;
 }
 
 * {
