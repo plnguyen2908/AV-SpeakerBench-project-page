@@ -50,34 +50,9 @@
 
   <div class="container">
     <section class="section">
-      <h2>What makes it different</h2>
-      <p class="sub">Fusion-grounded audiovisual design to prevent unimodal shortcuts.</p>
-      <div class="row">
-        <div class="card">
-          <h3>Benchmark focus</h3>
-          <ul class="list">
-            <li><strong>Clip length:</strong> short, real clips (&lt;25s) to match typical frame budgets.</li>
-            <li><strong>Coverage:</strong> 11 audio-visual skills including speaker detection/recognition/counting, speech duration/rate/intensity/pitch, activity, attributes, visual counting, and speech recognition.</li>
-            <li><strong>Diversity:</strong> 25.8% ≤2 speakers, 24.6% have 3, 18.1% have 4, 31.5% have ≥5.</li>
-          </ul>
-        </div>
-        <div class="card">
-          <h3>Fusion-grounded audiovisual questions</h3>
-          <p class="muted">Audio tasks use visual anchors; visual tasks use audio anchors; speaker reasoning mixes both to force cross-modal grounding.</p>
-          <ul class="list">
-            <li>Find the visual cue, then listen in-window to count mentions.</li>
-            <li>Locate the utterance, then inspect the video for the answer.</li>
-            <li>Track who/when/where with mixed anchors and answer cues.</li>
-          </ul>
-        </div>
-        <div class="card">
-          <h3>Dataset at a glance</h3>
-          <ul class="list">
-            <li><strong>Scale:</strong> 3,212 fusion-grounded MCQs from real-world clips.</li>
-            <li><strong>Modality:</strong> aligned audio + video; questions require cross-modal reasoning.</li>
-            <li><strong>Source:</strong> curated clips with expert annotations for temporal accuracy.</li>
-          </ul>
-        </div>
+      <h2>Introduction</h2>
+      <div class="card">
+        <p>AV-SpeakerBench is a curated benchmark of 3,212 multiple-choice questions that tests speaker-centric audiovisual reasoning in real-world videos. Unlike prior video datasets where many tasks are visually solvable or only loosely tied to speech, AV-SpeakerBench explicitly evaluates whether models can align who speaks, what is said, and when it happens. Questions are written with fusion-grounded semantics (audio–visual anchors) and expert-curated annotations to ensure temporal and cross-modal correctness. Initial results show that Gemini 2.5 Pro leads overall performance, while the gap between Gemini and strong open models such as Qwen3-Omni-30B highlights persistent weaknesses in audiovisual fusion.</p>
       </div>
     </section>
 
